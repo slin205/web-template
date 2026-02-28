@@ -1,0 +1,136 @@
+.display1 {
+    /* 67.8px */
+    letter-spacing: -0.022em;
+    font-size: var(--display1-font-size);
+    font-weight: 800;
+    line-height: var(--scale-quarterstep);
+}
+
+.display2 {
+    /* 41.9px */
+    letter-spacing: -0.022em;
+    font-size: var(--display2-font-size);
+    font-weight: 800;
+    line-height: var(--scale-halfstep);
+}
+
+.title1 {
+    /* 32.9px */
+    letter-spacing: -0.022em;
+    font-size: var(--title1-font-size);
+    font-weight: 600;
+    line-height: var(--scale-halfstep);
+}
+
+.title2 {
+    /* 25.9px */
+    letter-spacing: -0.02em;
+    font-size: var(--title2-font-size);
+    font-weight: 600;
+    line-height: var(--scale-halfstep);
+}
+
+.title3 {
+    /* 20.4px */
+    letter-spacing: -0.017em;
+    font-size: var(--title3-font-size);
+    font-weight: 600;
+    line-height: var(--scale-halfstep);
+}
+
+.heading {
+    /* 18.1px */
+    letter-spacing: -0.014em;
+    font-size: var(--heading-font-size);
+    font-weight: 600;
+    line-height: var(--scale-halfstep);
+}
+
+.body {
+    /* 16px */
+    letter-spacing: -0.011em;
+    cursor: default;
+    font-size: 1em;
+    font-weight: 400;
+    line-height: var(--scale-wholestep);
+}
+
+.callout {
+    /* 15px */
+    letter-spacing: -0.009em;
+    font-size: var(--callout-font-size);
+    font-weight: 400;
+    line-height: var(--scale-halfstep);
+}
+
+.subheading {
+    /* 14.2px */
+    letter-spacing: -0.007em;
+    font-size: var(--subheading-font-size);
+    font-weight: 400;
+    line-height: var(--scale-halfstep);
+}
+
+.label {
+    /* 13.4px */
+    letter-spacing: -0.004em;
+    font-size: var(--label-font-size);
+    font-weight: 400;
+    line-height: var(--scale-halfstep);
+}
+
+.caption {
+    /* 12.7px */
+    letter-spacing: -0.007em;
+    font-size: var(--caption-font-size);
+    font-weight: 400;
+    line-height: var(--scale-halfstep);
+}
+
+
+
+
+.weight-300 {
+    font-weight: 300;
+}
+
+.weight-400 {
+    font-weight: 400;
+}
+
+.weight-600 {
+    font-weight: 600;
+}
+
+.weight-800 {
+    font-weight: 800;
+}
+
+.italic {
+    font-style: italic;
+}
+
+
+
+
+@media screen and (max-width: 767px) {
+
+    .display1 {
+        font-size: 3.3301em;
+    }
+}
+
+@media screen and (max-width: 479px) {
+
+    .display1 {
+        font-size: 2.61743em;
+    }
+
+    .display2 {
+        font-size: 2.05818em;
+    }
+
+    .title1 {
+        font-size: 1.82285em;
+    }
+}

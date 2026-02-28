@@ -1,0 +1,346 @@
+:root {
+    --size-xs: 0.75rem;
+    --size-s: 0.875rem;
+    --size-m: 1rem;
+    --size-l: 1.25rem;
+    --size-xl: 1.563rem;
+    --size-2xl: 1.953rem;
+    --size-3xl: 2.441rem;
+    --size-4xl: 3.052rem;
+
+    --space-2xs: 0.25rem;
+    --space-xs: 0.5rem;
+    --space-s: 0.75rem;
+    --space-m: 1rem;
+    --space-l: 1.5rem;
+    --space-xl: 2rem;
+    --space-2xl: 3rem;
+    --space-3xl: 4rem;
+    --space-4xl: 5rem;
+}
+
+
+/* ------- Padding ------- */
+.p-0 {
+    padding: 0px !important;
+}
+
+.p-s {
+    padding: var(--space-s);
+}
+
+.p-m {
+    padding: var(--space-m);
+}
+
+.p-l {
+    padding: var(--space-l);
+}
+
+.p-xl {
+    padding: var(--space-xl);
+}
+
+.pt-xl {
+    padding-top: var(--space-xl);
+}
+
+.pt-2xl {
+    padding-top: var(--space-2xl);
+}
+
+.pt-3xl {
+    padding-top: var(--space-3xl);
+}
+
+.pt-4xl {
+    padding-top: var(--space-4xl);
+}
+
+.pb-l {
+    padding-bottom: var(--space-l);
+
+}
+
+.pb-xl {
+    padding-bottom: var(--space-xl);
+
+}
+
+.pb-4xl {
+    padding-bottom: var(--space-4xl);
+
+}
+
+.px-s {
+    padding-right: var(--space-s);
+    padding-left: var(--space-s);
+}
+
+.px-m {
+    padding-right: var(--space-m);
+    padding-left: var(--space-m);
+}
+
+.px-l {
+    padding-right: var(--space-l);
+    padding-left: var(--space-l);
+}
+
+.px-xl {
+    padding-right: var(--space-xl);
+    padding-left: var(--space-xl);
+}
+
+.px-2xl {
+    padding-right: var(--space-2xl);
+    padding-left: var(--space-2xl);
+}
+
+
+/* ------- Margin ------- */
+
+.mt-xs {
+    margin-top: var(--space-xs);
+}
+
+.mt-s {
+    margin-top: var(--space-s);
+}
+
+.mt-m {
+    margin-top: var(--space-m);
+}
+
+.mt-l {
+    margin-top: var(--space-l);
+}
+
+.mt-xl {
+    margin-top: var(--space-xl);
+}
+
+.mt-2xl {
+    margin-top: var(--space-2xl);
+}
+
+.mb-xl{
+    margin-bottom: var(--space-xl);
+}
+
+.mx-auto {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.m-auto {
+    margin: auto;
+}
+
+
+/* ------- Layout ------- */
+
+.grid {
+    display: grid;
+}
+
+.grid-auto {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.grid-cols-2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.flex-center {
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-end-start {
+    align-items: start;
+    justify-content: end;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.items-start {
+    align-items: start;
+}
+
+.justify-start {
+    justify-content: start;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-end {
+    justify-content: end;
+}
+
+
+/* ------- Gaps ------- */
+
+.gap-2xs {
+    gap: var(--space-2xs)
+}
+
+.gap-xs {
+    gap: var(--space-xs)
+}
+
+.gap-s {
+    gap: var(--space-s)
+}
+
+.gap-m {
+    gap: var(--space-m)
+}
+
+.gap-l {
+    gap: var(--space-l)
+}
+
+.gap-xl {
+    gap: var(--space-xl)
+}
+
+.gap-2xl {
+    gap: var(--space-2xl)
+}
+
+
+/* ------- Width ------- */
+
+.w-full {
+    width: 100%;
+}
+
+.max-w-full {
+    max-width: 100%;
+}
+
+.max-w-1440 {
+    max-width: 1400px;
+    margin: auto;
+}
+
+.max-w-1200 {
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+/* ------- Height ------- */
+
+.h-300 {
+    height: 300px;
+}
+
+
+/* ------- Aspect-Ratio ------- */
+
+.aspect-4x3 {
+    aspect-ratio: 4 / 3;
+}
+
+.aspect-4x5 {
+    aspect-ratio: 4 / 5;
+}
+
+.aspect-16x9 {
+    aspect-ratio: 16 / 9;
+}
+
+
+/* ------- Responsive ------- */
+
+@media (max-width:734px) {
+    .footer-module {
+
+        > :first-child {
+            width: 100%;
+            grid-column: 1/-1 !important;
+        }
+
+        > :last-child {
+            width: 100%;
+            grid-column: 1/-1 !important;
+        }
+    }
+}
+
+@media (max-width:600px) {
+    .grid-cols-2 {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+
+/* ------- Footer ------- */
+
+footer {
+    border-top: 1px solid var(--color-accent-light)
+}
+
+footer .social svg {
+    color: var(--color-accent-grey);
+}
+
+footer .social svg:hover {
+    color: var(--color-accent-dark) !important;
+}
+
+
+footer .social hr {
+    background: var(--color-background-accent);
+    border: 0;
+    width: 1px;
+    height: 16px;
+    display: block;
+}
+
+footer {
+    font-size: 14px;
+    font-weight: 300;
+
+    p,
+    a {
+        color: var(--color-accent-grey);
+    }
+
+    h4 {
+        color: var(--color-font-dark);
+    }
+}
+
+.footer-module {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+
+
+
+
+
+.text-center
+    {text-align: center;}

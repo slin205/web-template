@@ -1,0 +1,43 @@
+.rounded-2xs {
+    border-radius: var(--size-2xs);
+}
+
+.rounded-xs {
+    border-radius: var(--size-xs);
+}
+
+.rounded-s {
+    border-radius: var(--size-s);
+}
+
+.rounded-m {
+    border-radius: var(--size-m);
+}
+
+.rounded-l {
+    border-radius: var(--size-l);
+}
+
+.rounded-xl {
+    border-radius: var(--size-xl);
+}
+
+.rounded-2xl {
+    border-radius: var(--size-2xl);
+}
+
+.rounded-3xl {
+    border-radius: var(--size-3xl);
+}
+
+.rounded-4xl {
+    border-radius: var(--size-4xl);
+}
+
+.rounded-top {
+    border-radius: 999px 999px 0 0;
+}
+
+.rounded-bottom {
+    border-radius: 0 0 999px 999px;
+}

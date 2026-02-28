@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Test Build IHK</title>
+    <link rel="icon" href="favicon.png">
+    <link rel="preload" href="fonts/Geist/geist.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/main.v2.css">
+
+    <script src="script/dark-mode.js" defer></script>
+
+    <meta name="description" content="Beschreibung.">
+    <meta name="author" content="Sebastian Lindstaedt">
+</head>
+
+<body>
+    <section class="wrapper card p-l my-l">
+        <form class="grid gap-l" action="" method="post">
+            <div class="grid grid-cols-2 gap-l">
+                <div class="flex flex-column gap-2xs">
+                    <label class="label" for="first_name">Vorname<sup>*</sup></label>
+                    <input id="first_name" name="first_name" type="text" placeholder="Max" autocomplete="given-name"
+                        aria-describedby="first_name-error" required>
+                    <div class="form-error" id="first_name-error" aria-live="polite">
+                        <span class="material-symbols-outlined">info</span>
+                        <span>Gib deinen Vornamen an.</span>
+                    </div>
+                </div>
+                <div class="flex flex-column gap-2xs">
+                    <label class="label" for="last_name">Nachname</label>
+                    <input id="last_name" name="last_name" type="text" placeholder="Mustermann"
+                        autocomplete="family-name">
+                </div>
+            </div>
+            <div class="grid grid-cols-2 gap-l">
+                <div class="flex flex-column gap-2xs">
+                    <label class="label" for="phone">Mobil</label>
+                    <input id="phone" name="tel" type="tel" inputmode="tel" placeholder="+49 170 1234567"
+                        autocomplete="tel">
+                </div>
+                <div class="flex flex-column gap-2xs">
+                    <label class="label" for="email">E-Mail<sup>*</sup></label>
+                    <input id="email" name="email" type="email" placeholder="max@mustermann.de" autocomplete="email"
+                        aria-describedby="email-error" required>
+                    <div class="form-error" id="email-error" aria-live="polite">
+                        <span class="material-symbols-outlined">info</span>
+                        <span>Gib deine E-Mail an.</span>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-column gap-2xs">
+                <label class="label" for="select">Auswahl der Optionen</label>
+                <select class="select-wrap" id="select" name="anliegen">
+                    <option value="" selected disabled>Bitte auswählen</option>
+                    <option value="Erste Option">Erste Option</option>
+                    <option value="Zweite Option">Zweite Option</option>
+                    <option value="Dritte Option">Dritte Option</option>
+                    <option value="Vierte Option">Vierte Option</option>
+                </select>
+            </div>
+            <fieldset class="flex flex-wrap gap-l">
+                <legend class="label mb-s">Auswahl der Optionen</legend>
+                <div class="flex items-center gap-xs">
+                    <input type="radio" name="radio" id="radio-1" value="Erste Option">
+                    <label class="body" for="radio-1">Erste Option der Auswahl</label>
+                </div>
+                <div class="flex items-center gap-xs">
+                    <input type="radio" name="radio" id="radio-2" value="Zweite Option">
+                    <label class="body" for="radio-2">Zweite Option der Auswahl</label>
+                </div>
+            </fieldset>
+            <div>
+                <div class="flex items-center gap-2xs">
+                    <input type="checkbox" id="privacy" name="privacy" required aria-describedby="privacy-error">
+                    <label class="m-0" for="privacy">Ich habe die <a href="/datenschutz">Datenschutzerklärung</a> zur
+                        Kenntnis genommen.<sup>*</sup></label>
+                </div>
+                <div class="form-error" id="privacy-error" aria-live="polite">
+                    <span class="material-symbols-outlined">info</span>
+                    <span>Du musst den Datenschutz akzeptieren.</span>
+                </div>
+            </div>
+            <button class="cta-btn" type="submit">Absenden</button>
+        </form>
+    </section>
+    <footer>
+        <div class="wrapper my-l">
+            <div class="flex justify-space-between items-center">
+                <p>© 2026 SL</p>
+                <div class="theme-switch" role="group" aria-label="Theme">
+                    <button type="button" data-theme="light" aria-pressed="false"
+                        class="material-symbols-outlined">light_mode</button>
+                    <button type="button" data-theme="system" aria-pressed="true"
+                        class="material-symbols-outlined">desktop_windows</button>
+                    <button type="button" data-theme="dark" aria-pressed="false"
+                        class="material-symbols-outlined">dark_mode</button>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

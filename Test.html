@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Test Build IHK</title>
+    <link rel="icon" href="favicon.png">
+    <link rel="preload" href="fonts/Geist/geist.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/main.v2.css">
+
+    <script src="script/dark-mode.js" defer></script>
+
+    <meta name="description" content="Beschreibung.">
+    <meta name="author" content="Sebastian Lindstaedt">
+</head>
+
+<body>
+    <div class="h-460"></div>
+
+    <section class="wrapper card p-l my-l">
+
+<a href="/kontakt.html"></a>
+
+        <!---------- Kontaktformular---------->
+        <form class="grid gap-l" action="" method="post">
+            <div class="grid grid-cols-2 gap-l">
+                <div class="flex flex-column gap-2xs">
+                    <label class="label" for="first_name">Vorname<sup>*</sup></label>
+                    <input id="first_name" name="first_name" type="text" placeholder="Max" autocomplete="given-name" aria-describedby="first_name-error"
+                        required>
+                    <div class="form-error" id="first_name-error" aria-live="polite">
+                        <span class="material-symbols-outlined">info</span>
+                        <span>Gib deinen Vornamen an.</span>
+                    </div>
+                </div>
+                <div class="flex flex-column gap-2xs">
+                    <label class="label" for="last_name">Nachname</label>
+                    <input id="last_name" name="last_name" type="text" placeholder="Mustermann"
+                        autocomplete="family-name">
+                </div>
+            </div>
+            <div class="grid grid-cols-2 gap-l">
+                <div class="flex flex-column gap-2xs">
+                    <label class="label" for="phone">Mobil</label>
+                    <input id="phone" name="tel" type="tel" inputmode="tel" placeholder="+49 170 1234567"
+                        autocomplete="tel">
+                </div>
+                <div class="flex flex-column gap-2xs">
+                    <label class="label" for="email">E-Mail<sup>*</sup></label>
+                    <input id="email" name="email" type="email" placeholder="max@mustermann.de" autocomplete="email" aria-describedby="email-error"
+                        required>
+                    <div class="form-error" id="email-error" aria-live="polite">
+                        <span class="material-symbols-outlined">info</span>
+                        <span>Gib deine E-Mail an.</span>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-column gap-2xs">
+                <label class="label" for="select">Auswahl der Optionen</label>
+                <select class="select-wrap" id="select" name="anliegen">
+                    <option value="" selected disabled>Bitte auswählen</option>
+                    <option value="Erste Option">Erste Option</option>
+                    <option value="Zweite Option">Zweite Option</option>
+                    <option value="Dritte Option">Dritte Option</option>
+                    <option value="Vierte Option">Vierte Option</option>
+                </select>
+            </div>
+            <fieldset class="flex flex-wrap gap-l">
+                <legend class="label mb-s">Auswahl der Optionen</legend>
+                <div class="flex items-center gap-xs">
+                    <input type="radio" name="radio" id="radio-1" value="Erste Option">
+                    <label class="body" for="radio-1">Erste Option der Auswahl</label>
+                </div>
+                <div class="flex items-center gap-xs">
+                    <input type="radio" name="radio" id="radio-2" value="Zweite Option">
+                    <label class="body" for="radio-2">Zweite Option der Auswahl</label>
+                </div>
+            </fieldset>
+            <div>
+                <div class="flex items-center gap-2xs">
+                    <input type="checkbox" id="privacy" name="privacy" required aria-describedby="privacy-error">
+                    <label class="m-0" for="privacy">Ich habe die <a href="/datenschutz">Datenschutzerklärung</a> zur
+                        Kenntnis genommen.<sup>*</sup></label>
+                </div>
+                <div class="form-error" id="privacy-error" aria-live="polite">
+                    <span class="material-symbols-outlined">info</span>
+                    <span>Du musst den Datenschutz akzeptieren.</span>
+                </div>
+            </div>
+            <button class="cta-btn" type="submit">Absenden</button>
+        </form>
+        <!------------------------------------>
+
+
+
+    </section>
+    <main class="wrapper mt-4xl">
+        <section class="">
+            <div class="mb-xl">
+                <div class="flex gap-s items-center mb-s">
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="23" height="19" viewBox="0 0 23 19"
+                        fill="none">
+                        <path
+                            d="M22.2308 8.85914C22.2132 8.57914 21.9988 8.35102 21.7204 8.31593C20.9113 8.21403 18.2983 8.03488 15.7344 9.44183C15.7156 8.65453 15.6244 7.86384 15.4482 7.0792C14.7402 3.92826 12.9206 1.83323 11.8983 0.865059C11.6724 0.651436 11.3184 0.650673 11.0926 0.865822C10.0703 1.83475 8.25067 3.92979 7.54342 7.07767C7.37 7.84314 7.2794 8.63226 7.26047 9.4322C4.69551 8.03521 2.08731 8.21541 1.27892 8.31593C1.00045 8.35102 0.786066 8.57914 0.768518 8.85914C0.734949 9.3787 0.550317 14.0158 4.3757 16.9677C5.46746 17.813 6.71182 18.3821 8.06909 18.6583C8.86636 18.8277 9.5942 18.8796 10.1855 18.8796C10.8027 18.8796 11.2587 18.8241 11.5018 18.7865C11.7862 18.8287 12.2467 18.8803 12.8413 18.8803C13.4531 18.8803 14.197 18.8254 15.0042 18.6484C16.3424 18.3509 17.5601 17.7855 18.6228 16.9692L18.6236 16.9684C22.449 14.0227 22.2643 9.37946 22.2308 8.85914ZM8.6863 7.33555C9.24096 4.8682 10.5532 3.1142 11.4954 2.11933C12.4377 3.11344 13.7499 4.86668 14.3054 7.33555C14.519 8.28922 14.6044 9.25205 14.5617 10.2019C14.5285 10.227 14.4987 10.2601 14.4657 10.2858C14.1761 10.5118 13.892 10.7526 13.6225 11.0221C13.3741 11.2742 13.1535 11.5332 12.9482 11.7947C12.9224 11.8276 12.8946 11.8599 12.8695 11.8929C12.6788 12.1427 12.5087 12.3949 12.3531 12.648C12.3266 12.691 12.3003 12.7337 12.2747 12.7768C12.1266 13.0268 11.9933 13.2765 11.8754 13.5247C11.8558 13.566 11.8381 13.6065 11.8192 13.6477C11.7044 13.8987 11.6004 14.1476 11.5127 14.3914C11.5104 14.3978 11.5069 14.4046 11.5046 14.411C11.4991 14.3957 11.491 14.3798 11.4854 14.3645C11.3967 14.1203 11.2953 13.8731 11.1799 13.6236C11.1614 13.5834 11.142 13.5435 11.1227 13.5032C11.0028 13.2534 10.8697 13.0027 10.7193 12.752C10.6972 12.7151 10.6732 12.6786 10.6503 12.6416C10.4919 12.3858 10.3194 12.131 10.1252 11.879C10.1056 11.8536 10.0837 11.8289 10.0637 11.8035C9.85575 11.5395 9.63087 11.2782 9.37905 11.0236C9.22194 10.863 9.05256 10.7072 8.87461 10.5532C8.81824 10.5045 8.75559 10.4558 8.69675 10.4074C8.60896 10.3351 8.52575 10.2622 8.43225 10.1905C8.39257 9.21619 8.47802 8.25794 8.6863 7.33555ZM8.30789 17.5109C7.12304 17.2698 6.04119 16.7754 5.0921 16.0407C2.32644 13.9067 1.96481 10.6688 1.93276 9.43287C3.08328 9.36726 5.41329 9.46186 7.51672 10.9687C7.91268 11.2571 8.24838 11.5432 8.54363 11.8453C8.79641 12.1009 9.02271 12.3635 9.22537 12.6299C9.29961 12.7275 9.35512 12.8271 9.42311 12.9256C9.5408 13.0959 9.66496 13.2656 9.7651 13.4373C9.81545 13.5235 9.85074 13.6093 9.8969 13.6956C9.99565 13.8803 10.0979 14.0653 10.1788 14.2486C10.2015 14.2999 10.2155 14.3493 10.2368 14.4004C10.3273 14.6173 10.4141 14.8339 10.4826 15.0449C10.4843 15.05 10.4851 15.0548 10.4868 15.06C10.8191 16.0899 10.9074 17.0274 10.9174 17.6757C10.3618 17.723 9.40623 17.745 8.30789 17.5109ZM17.9087 16.0399C16.9825 16.7517 15.9197 17.2438 14.7509 17.504C13.6555 17.745 12.6981 17.7298 12.09 17.6772C12.0907 17.598 12.0963 17.4943 12.1004 17.3976C12.103 17.3363 12.1027 17.2873 12.1072 17.2195C12.115 17.1016 12.1314 16.962 12.1463 16.8265C12.1536 16.7596 12.1564 16.7027 12.1658 16.6319C12.1845 16.4915 12.2155 16.3343 12.2437 16.1806C12.2587 16.0996 12.2672 16.0266 12.2851 15.9424C12.315 15.802 12.36 15.6497 12.3993 15.5017C12.4283 15.3924 12.4493 15.2888 12.484 15.1761C12.5249 15.0429 12.5834 14.9029 12.6331 14.7659C12.6823 14.6301 12.7228 14.4974 12.7814 14.3589C12.8287 14.2469 12.8943 14.1324 12.9483 14.0192C13.0284 13.8511 13.1009 13.6838 13.1966 13.5145C13.2341 13.4482 13.2858 13.3827 13.3258 13.3164C13.4566 13.1 13.5882 12.8833 13.7478 12.6695C13.9564 12.3904 14.1906 12.115 14.4541 11.8476C14.7746 11.5271 15.1156 11.2387 15.4734 10.9862C17.5807 9.46415 19.9091 9.3642 21.0665 9.43287C21.0345 10.6696 20.6736 13.9106 17.9087 16.0399Z"
+                            fill="#0C2F25" />
+                    </svg>
+                    <p>Who We Are</p>
+                </div>
+                <h2 class="display2">Everybody can benefit from yoga.</h2>
+            </div>
+            <div>
+                <ul class="custom-ul">
+                    <li class="pr-l">Holistic Wellness Programs</li>
+                    <hr>
+                    <li class="pr-l">Group Meditation Sessions</li>
+                    <hr>
+                    <li class="pr-l">Relaxation Techniques</li>
+                    <hr>
+                    <li class="pr-l">Breathwork Practices</li>
+                </ul>
+            </div>
+            <img class="rounded-top h-460 mt-xl mb-2xl" src="src/img/whoweare.jpg" alt="frau">
+            <div>
+                <p class="mb-2xl">it’s a journey to connect mind, body, and soul. Our certified instructors guide you
+                    through classes designed for all levels, from beginners to advanced practitioners.</p>
+                <p class="mb-xl">Whether you seek strength, flexibility, stress relief, or mindfulness, we’re here to
+                    help.</p>
+                <a class="cta-btn" href="#">Know More</a>
+                <div class="flex flex-row items-center gap-xl mt-xl">
+                    <img src="src/ico/pricewinner.png" alt="award">
+                    <p>Award-Winning Yoga ‍Studio 2025</p>
+                </div>
+            </div>
+        </section>
+        <section class="pb-l mt-2xl">
+            <div class="pb-2xl">
+                <div class="flex gap-s items-center pb-s">
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="23" height="19" viewBox="0 0 23 19"
+                        fill="none">
+                        <path
+                            d="M22.2308 8.85914C22.2132 8.57914 21.9988 8.35102 21.7204 8.31593C20.9113 8.21403 18.2983 8.03488 15.7344 9.44183C15.7156 8.65453 15.6244 7.86384 15.4482 7.0792C14.7402 3.92826 12.9206 1.83323 11.8983 0.865059C11.6724 0.651436 11.3184 0.650673 11.0926 0.865822C10.0703 1.83475 8.25067 3.92979 7.54342 7.07767C7.37 7.84314 7.2794 8.63226 7.26047 9.4322C4.69551 8.03521 2.08731 8.21541 1.27892 8.31593C1.00045 8.35102 0.786066 8.57914 0.768518 8.85914C0.734949 9.3787 0.550317 14.0158 4.3757 16.9677C5.46746 17.813 6.71182 18.3821 8.06909 18.6583C8.86636 18.8277 9.5942 18.8796 10.1855 18.8796C10.8027 18.8796 11.2587 18.8241 11.5018 18.7865C11.7862 18.8287 12.2467 18.8803 12.8413 18.8803C13.4531 18.8803 14.197 18.8254 15.0042 18.6484C16.3424 18.3509 17.5601 17.7855 18.6228 16.9692L18.6236 16.9684C22.449 14.0227 22.2643 9.37946 22.2308 8.85914ZM8.6863 7.33555C9.24096 4.8682 10.5532 3.1142 11.4954 2.11933C12.4377 3.11344 13.7499 4.86668 14.3054 7.33555C14.519 8.28922 14.6044 9.25205 14.5617 10.2019C14.5285 10.227 14.4987 10.2601 14.4657 10.2858C14.1761 10.5118 13.892 10.7526 13.6225 11.0221C13.3741 11.2742 13.1535 11.5332 12.9482 11.7947C12.9224 11.8276 12.8946 11.8599 12.8695 11.8929C12.6788 12.1427 12.5087 12.3949 12.3531 12.648C12.3266 12.691 12.3003 12.7337 12.2747 12.7768C12.1266 13.0268 11.9933 13.2765 11.8754 13.5247C11.8558 13.566 11.8381 13.6065 11.8192 13.6477C11.7044 13.8987 11.6004 14.1476 11.5127 14.3914C11.5104 14.3978 11.5069 14.4046 11.5046 14.411C11.4991 14.3957 11.491 14.3798 11.4854 14.3645C11.3967 14.1203 11.2953 13.8731 11.1799 13.6236C11.1614 13.5834 11.142 13.5435 11.1227 13.5032C11.0028 13.2534 10.8697 13.0027 10.7193 12.752C10.6972 12.7151 10.6732 12.6786 10.6503 12.6416C10.4919 12.3858 10.3194 12.131 10.1252 11.879C10.1056 11.8536 10.0837 11.8289 10.0637 11.8035C9.85575 11.5395 9.63087 11.2782 9.37905 11.0236C9.22194 10.863 9.05256 10.7072 8.87461 10.5532C8.81824 10.5045 8.75559 10.4558 8.69675 10.4074C8.60896 10.3351 8.52575 10.2622 8.43225 10.1905C8.39257 9.21619 8.47802 8.25794 8.6863 7.33555ZM8.30789 17.5109C7.12304 17.2698 6.04119 16.7754 5.0921 16.0407C2.32644 13.9067 1.96481 10.6688 1.93276 9.43287C3.08328 9.36726 5.41329 9.46186 7.51672 10.9687C7.91268 11.2571 8.24838 11.5432 8.54363 11.8453C8.79641 12.1009 9.02271 12.3635 9.22537 12.6299C9.29961 12.7275 9.35512 12.8271 9.42311 12.9256C9.5408 13.0959 9.66496 13.2656 9.7651 13.4373C9.81545 13.5235 9.85074 13.6093 9.8969 13.6956C9.99565 13.8803 10.0979 14.0653 10.1788 14.2486C10.2015 14.2999 10.2155 14.3493 10.2368 14.4004C10.3273 14.6173 10.4141 14.8339 10.4826 15.0449C10.4843 15.05 10.4851 15.0548 10.4868 15.06C10.8191 16.0899 10.9074 17.0274 10.9174 17.6757C10.3618 17.723 9.40623 17.745 8.30789 17.5109ZM17.9087 16.0399C16.9825 16.7517 15.9197 17.2438 14.7509 17.504C13.6555 17.745 12.6981 17.7298 12.09 17.6772C12.0907 17.598 12.0963 17.4943 12.1004 17.3976C12.103 17.3363 12.1027 17.2873 12.1072 17.2195C12.115 17.1016 12.1314 16.962 12.1463 16.8265C12.1536 16.7596 12.1564 16.7027 12.1658 16.6319C12.1845 16.4915 12.2155 16.3343 12.2437 16.1806C12.2587 16.0996 12.2672 16.0266 12.2851 15.9424C12.315 15.802 12.36 15.6497 12.3993 15.5017C12.4283 15.3924 12.4493 15.2888 12.484 15.1761C12.5249 15.0429 12.5834 14.9029 12.6331 14.7659C12.6823 14.6301 12.7228 14.4974 12.7814 14.3589C12.8287 14.2469 12.8943 14.1324 12.9483 14.0192C13.0284 13.8511 13.1009 13.6838 13.1966 13.5145C13.2341 13.4482 13.2858 13.3827 13.3258 13.3164C13.4566 13.1 13.5882 12.8833 13.7478 12.6695C13.9564 12.3904 14.1906 12.115 14.4541 11.8476C14.7746 11.5271 15.1156 11.2387 15.4734 10.9862C17.5807 9.46415 19.9091 9.3642 21.0665 9.43287C21.0345 10.6696 20.6736 13.9106 17.9087 16.0399Z"
+                            fill="#0C2F25" />
+                    </svg>
+                    <p>Our Services</p>
+                </div>
+                <h2 class="display2">Check out our yoga and exercise options.</h2>
+            </div>
+            <div class="grid grid-cols-2 gap-l justify-center">
+                <div class="card p-l text-center">
+                    <img class="mb-l h-460 rounded-top w-full" src="src/img/baddha.jpg" alt="yoga">
+                    <h4 class="title1 mb-l">Baddha Konasana</h4>
+                    <p class="mb-l">This helps clients understand what to expect and builds confidence.</p>
+                    <a class="cta-btn" href="#">Read More</a>
+                </div>
+
+                <div class="card p-l text-center">
+                    <img class="mb-l h-460 rounded-top w-full" src="src/img/namaskara.jpg" alt="yoga">
+                    <h4 class="title1 mb-l">Namaskara Yoga</h4>
+                    <p class="mb-l">This boosts confidence and helps clients know what to anticipate.</p>
+                    <a class="cta-btn" href="#">Read More</a>
+                </div>
+
+                <div class="card p-l text-center">
+                    <img class="mb-l h-460 rounded-top w-full" src="src/img/urdhva.jpg" alt="yoga">
+                    <h4 class="title1 mb-l">Urdhva Hastasana</h4>
+                    <p class="mb-l">It gives clients belief and helps them know what to anticipate.</p>
+                    <a class="cta-btn" href="#">Read More</a>
+                </div>
+
+                <div class="card p-l text-center">
+                    <img class="mb-l h-460 rounded-top w-full" src="src/img/ardha.jpg" alt="yoga">
+                    <h4 class="title1 mb-l">Ardha Uttanasana</h4>
+                    <p class="mb-l">It allows clients know what to expect and provides them faith.</p>
+                    <a class="cta-btn" href="#">Read More</a>
+                </div>
+            </div>
+        </section>
+        <section class="card p-l grid gap-l mb-xl">
+
+            <h1 class="display1">Sixty zippers were quickly picked from the woven jute bag</h1>
+            <h2 class="display2">Sixty zippers were quickly picked from the woven jute bag</h2>
+            <h3 class="title1">Sixty zippers were quickly picked from the woven jute bag</h3>
+            <h4 class="title2">Sixty zippers were quickly picked from the woven jute bag</h4>
+            <p>Unlock the full potential of your business. Start your journey today and experience the future of
+                business software.</p>
+            <a class="cta-btn" href="#">Hier klicken<span
+                    class="material-symbols-outlined ml-2xs">arrow_forward</span></a>
+        </section>
+    </main>
+    <footer>
+        <div class="wrapper my-l">
+            <div class="flex justify-space-between items-center">
+                <p>© 2026 SL-Test-Build-IHK</p>
+                <div class="theme-switch" role="group" aria-label="Theme">
+                    <button type="button" data-theme="light" aria-pressed="false"
+                        class="material-symbols-outlined">light_mode</button>
+                    <button type="button" data-theme="system" aria-pressed="true"
+                        class="material-symbols-outlined">desktop_windows</button>
+                    <button type="button" data-theme="dark" aria-pressed="false"
+                        class="material-symbols-outlined">dark_mode</button>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

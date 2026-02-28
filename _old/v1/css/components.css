@@ -1,0 +1,53 @@
+.cta-button {
+    background-color: var(--color-accent);
+    padding: var(--space-m) var(--space-2xl);
+    display: inline-block;
+    border-radius: var(--space-m);
+    font-weight: 500;
+}
+
+.cta-link {
+    color: var(--color-accent);
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+.card {
+    background-color: var(--color-background-light);
+    border-radius: var(--space-m);
+    overflow: hidden;
+}
+
+.btn-primary {
+    background-color: var(--color-accent);
+}
+
+/* ------- Formular ------- */
+
+form button {
+    background: var(--color-background-white);
+    border: 1px solid #0000001a;
+    border-radius: 6px;
+    padding: 2px 6px;
+    position: relative;
+    right: 8px;
+    transform: translateX(-100%);
+    color: var(--color-accent-grey);
+
+}
+
+
+input {
+    background: var(--color-background-light);
+    height: 100%;
+    color: var(--color-font-dark);
+    border: 0;
+    border-radius: 6px;
+    padding: 8px 85px 8px 12px;
+}
+
+
+/*
+    --global-content-max-width-hero: 1680px;
+    --global-content-max-width:1260px
+*/

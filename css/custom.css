@@ -1,0 +1,157 @@
+.custom-ul {
+
+    display: grid;
+    gap: 8px;
+    width: fit-content;
+
+
+
+    li::marker {
+        content: url(../src/ico/list-style.png);
+    }
+
+    li:before {
+        content: '';
+        padding-left: 12px;
+    }
+
+    hr {
+        background-color: #EFEFEF;
+        height: 1px;
+        border: 0;
+    }
+}
+
+#menu {
+    background-color: transparent;
+    inset: auto;
+    top: 3rem;
+    right: 1rem;
+    border: none;
+}
+
+.btn-menu {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    background-color: var(--color-custom-button);
+    color: black;
+    border: none;
+    border-radius: 99px;
+    width: 40px;
+    height: 40px;
+}
+
+
+#menu:popover-open {
+    display: block;
+}
+
+
+.menu-toggle .label-close {
+    display: none;
+}
+
+/* Wenn Popover offen ist → Text wechseln */
+#menu:popover-open+.menu-toggle .label-open {
+    display: none;
+}
+
+#menu:popover-open+.menu-toggle .label-close {
+    display: inline;
+}
+
+
+
+#menu li {
+    border-radius: var(--size-s);
+    background-color: #CADB61;
+    padding: 12px 24px;
+}
+
+
+#menu li {
+    opacity: 0;
+    transform: translateY(-6px);
+    transition: opacity 260ms ease, transform 260ms ease;
+}
+
+#menu:popover-open li {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@starting-style {
+    #menu:popover-open li {
+        opacity: 0;
+        transform: translateY(-6px);
+    }
+}
+
+#menu:popover-open li:nth-child(1) {
+    transition-delay: 90ms;
+}
+
+#menu:popover-open li:nth-child(2) {
+    transition-delay: 140ms;
+}
+
+
+
+
+
+
+#hero-container {
+    background-image:
+        linear-gradient(to top,
+            rgba(0, 0, 0, 25.9) 0%,
+            rgba(0, 0, 0, 0) 41.9%),
+        url("../src/img/gradient.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: var(--color-text-white);
+
+    h1,
+    p {
+        color: var(--color-text-white);
+    }
+}
+
+
+.header-container {
+    border-bottom: 1px solid var(--color-border);
+}
+
+
+
+
+.globalnav-logo svg {
+    width: var(--size-4xl);
+    height: auto;
+    display: block;
+    fill: var(--color-text);
+}
+
+.globalnav-links {
+  button {
+    border: 0;
+    background: none;
+    border-radius: var(--size-2xs);
+    padding: var(--size-2xs) var(--size-s);
+
+    .material-symbols-filled {
+        display: inline-block;
+        transition: transform 0.618s cubic-bezier(0.618, 0.062, 0.272, 1);
+    }
+
+    &:hover {
+      background-color: var(--color-border);
+
+      .material-symbols-filled {
+        transform: rotateX(180deg);
+      }
+    }
+  }
+}
+
