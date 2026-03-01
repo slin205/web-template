@@ -21,6 +21,7 @@
     --color-border: #eaeaea;
     --color-surface: #fafafa;
     --color-accent: #BDED3D;
+    --color-accent-light: #ebfcbd;
     --color-error: #d92323;
     /*--color-icons: #fff;*/
 
@@ -72,7 +73,7 @@ html {
     scroll-behavior: smooth;
 }
 
-header{
+header {
     z-index: 999;
 }
 
@@ -83,6 +84,7 @@ body {
     line-height: var(--scale-wholestep);
     background-color: var(--color-bg);
     color: var(--color-text);
+    text-wrap: pretty;
 }
 
 h1,

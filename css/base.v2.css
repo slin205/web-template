@@ -41,6 +41,11 @@
     --height-content: 590.8px;
     --height-hero: 751.4px;
     --width-content: 1426.5px;
+    --globalnav-height: 64px;
+
+    --z-index-header: 999;
+    --z-index-banner: 990;
+
 
     /*
     --global-content-max-width-hero: 1680px;

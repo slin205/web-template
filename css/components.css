@@ -8,7 +8,9 @@
     align-items: center;
     justify-content: center;
     gap: var(--size-xs);
+    color: var(--color-overwrite-black);
 }
+
 
 .cta-link {
     color: var(--color-accent);
@@ -39,6 +41,13 @@
 .wrapper {
     width: min(100% - (2 * var(--size-m)), 1426.5px);
     margin-inline: auto;
+}
+
+.wrapper-v2 {
+    width: 100%;
+    max-width: var(--width-content);
+    margin-inline: auto;
+    padding-inline: var(--size-l);
 }
 
 .visually-hidden {
@@ -171,7 +180,8 @@
 }
 
 .notification-banner {
-
+    position: relative;
+    z-index: var(--z-index-banner);
     background-color: var(--color-banner);
     min-height: calc(var(--size-xl) * var(--scale-halfstep));
 

@@ -1,3 +1,4 @@
+/* 
 const banner = document.querySelector(".notification-banner");
 const closeButtons = banner?.querySelectorAll(
   ".notification-banner_close, .notification-banner_cta-close"
@@ -17,6 +18,18 @@ closeButtons?.forEach((btn) => {
   btn.addEventListener("click", () => {
     const oneDay = 24 * 60 * 60 * 1000;
     localStorage.setItem(KEY, String(Date.now() + oneDay));
+    banner.style.display = "none";
+  });
+});
+*/
+
+const banner = document.querySelector(".notification-banner");
+const closeButtons = banner?.querySelectorAll(
+  ".notification-banner_close, .notification-banner_cta-close"
+);
+
+closeButtons?.forEach((btn) => {
+  btn.addEventListener("click", () => {
     banner.style.display = "none";
   });
 });
