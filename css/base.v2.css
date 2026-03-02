@@ -41,7 +41,10 @@
     --height-content: 590.8px;
     --height-hero: 751.4px;
     --width-content: 1426.5px;
-    --globalnav-height: 64px;
+    --width-max-content: 1680px;
+
+    --globalnav-height-mobil: 64px;
+    --globalnav-height-desktop: 80.65px;
 
     --z-index-header: 999;
     --z-index-banner: 990;
@@ -87,7 +90,7 @@
     flex-wrap: wrap;
 }
 
-.flex-no-wrap{
+.flex-no-wrap {
     flex-wrap: nowrap;
 }
 
@@ -160,7 +163,7 @@
     margin: auto;
 }
 
-.max-w-div{
+.max-w-div {
     max-width: 560px;
 }
 
@@ -302,10 +305,10 @@ footer .social hr {
 
 
 
-.text-white{
-    color: var(--color-overwrite-white)!important;
+.text-white {
+    color: var(--color-overwrite-white) !important;
 }
 
-.text-black{
-    color: var(--color-overwrite-black)!important;
+.text-black {
+    color: var(--color-overwrite-black) !important;
 }

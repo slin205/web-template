@@ -179,34 +179,6 @@
     }
 }
 
-.notification-banner {
-    position: relative;
-    z-index: var(--z-index-banner);
-    background-color: var(--color-banner);
-    min-height: calc(var(--size-xl) * var(--scale-halfstep));
-
-    .notification-banner_inner {
-        margin-inline: auto;
-    }
-
-    .new {
-        color: var(--color-text-white);
-        background-color: var(--color-overwrite-black) !important;
-        padding: var(--size-2xs) var(--size-s);
-        border-radius: var(--size-s);
-    }
-
-    .notification-banner_close {
-        position: absolute;
-        right: 0;
-        margin: var(--size-s);
-        background: transparent;
-        border: none;
-        color: var(--color-text-black);
-        font-size: var(--size-l);
-        cursor: pointer;
-    }
-}
 
 .globalnav-links,
 .globalnav-ctacontainer {

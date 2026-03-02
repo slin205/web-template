@@ -1,0 +1,19 @@
+.color-black{
+    color: var(--color-overwrite-black);
+}
+
+.color-white{
+    color: var(--color-overwrite-white);
+}
+
+.color-grey{
+    color: var(--color-text-grey);
+}
+
+.bg-black{
+    background-color: var(--color-overwrite-black);
+}
+
+.bg-white{
+    background-color: var(--color-overwrite-white);
+}

@@ -14,22 +14,22 @@
 </head>
 
 <body>
-        <div class="notification-banner flex items-center justify-center pl-m pr-2xl">
-        <div class="notification-banner_inner flex flex-wrap gap-xs justify-start items-center py-s">
+    <div class="notification-banner">
+        <div class="notification-banner-content">
             <div class="flex flex-wrap gap-2xs justify-start items-center">
-                <span class="new text-white label mr-xs">New</span>
-                <span class="subheading text-black weight-300">We are hiring professional AI Agents. Work 24/7
+                <span class="label color-white bg-black rounded-s mr-xs px-s py-2xs ">New</span>
+                <span class="subheading color-black weight-300">We are hiring professional AI Agents. Work 24/7
                     without a break.</span>
             </div>
-            <span class="notification-banner_cta-close">
-                <a class="cta-notification text-black flex gap-xs subheading" href="#">
-                    <span class="text-black">Mehr Erfahren</span>
-                    <span class="material-symbols-outlined text-black">arrow_forward</span>
+            <span class="notification-banner-cta-close">
+                <a class="subheading cta-notification color-black flex gap-xs" href="#">
+                    <span class="color-black">Mehr Erfahren</span>
+                    <span class="material-symbols-outlined color-black">arrow_forward</span>
                 </a>
             </span>
         </div>
-        <button class="notification-banner_close" aria-label="Banner schließen">
-            <span class="material-symbols-outlined text-black">close</span>
+        <button class="notification-banner-close" aria-label="Banner schließen">
+            <span class="material-symbols-outlined color-black">close</span>
         </button>
     </div>
     <header>
@@ -62,17 +62,57 @@
                         </a>
                     </div>
                     <div class="globalnav-links">
-                        <div id="gn-link1" class="globalnav-dropdown-container">
+                        <div id="nav-link-1" class="globalnav-dropdown-container">
                             <button>
                                 <span>Produkte</span>
                                 <span class="material-symbols-filled">keyboard_arrow_down</span>
                             </button>
-                            <div class="globalnav-dropdown"></div>
+                            <div class="globalnav-dropdown">
+                                <div class="globalnav-dropdown-grid">
+                                    <div class="flex flex-column gap-2xs p-l">
+                                        <h4 class="subheading color-grey">Durchsuchen</h4>
+                                        <a class="globalnav-dropdown-link" href="#">Bibliothek</a>
+                                        <a class="globalnav-dropdown-link" href="#">Archiv</a>
+                                        <a class="globalnav-dropdown-link" href="#">News</a>
+                                    </div>
+                                    <div class="flex flex-column gap-2xs p-l">
+                                        <h4 class="subheading color-grey">Entdecke</h4>
+                                        <a class="globalnav-dropdown-link" href="#">Anwendungszwecke</a>
+                                        <a class="globalnav-dropdown-link" href="#">Einsatzgebiete</a>
+                                    </div>
+                                    <div class="flex flex-column gap-2xs p-l">
+                                        <h4 class="subheading color-grey">Preise</h4>
+                                        <a class="globalnav-dropdown-link" href="#">Bildungswesen</a>
+                                        <a class="globalnav-dropdown-link" href="#">Professional</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="nav-link-2" class="globalnav-dropdown-container">
+                            <button>
+                                <span>AI Agents</span>
+                                <span class="material-symbols-filled">keyboard_arrow_down</span>
+                            </button>
+                            <div class="globalnav-dropdown-debug"></div>
+                        </div>
+                        <div id="nav-link-3" class="globalnav-dropdown-container">
+                            <button>
+                                <span>Resources</span>
+                                <span class="material-symbols-filled">keyboard_arrow_down</span>
+                            </button>
+                            <div class="globalnav-dropdown-debug"></div>
+                        </div>
+                        <div class="globalnav-dropdown-container">
+                            <button>Enterprise</button>
+                        </div>
+                        <div class="globalnav-dropdown-container">
+                            <button>Support</button>
                         </div>
                     </div>
                     <div class="globalnav-actions">
                         <div class="globalnav-cta">
                             <a class="cta-btn" href="#">Anmelden</a>
+                            <a class="git-btn" href="https://github.com/slin205/web-template">Zum Git-Repository</a>
                         </div>
                         <div class="globalnav-mobile">
                             <button class="mobile-trigger" aria-label="Menü" aria-expanded="false"
@@ -98,6 +138,14 @@
             </div>
         </div>
     </header>
+    <main>
+        <section id="hero-container" class="h-hero">
+            <div class="wrapper-v2"></div>
+        </section>
+        <section class="h-hero">
+
+        </section>
+    </main>
 </body>
 
 </html>

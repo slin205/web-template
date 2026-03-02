@@ -1,11 +1,13 @@
 @import "base.v2.css";
 @import "components.css";
+@import "components.v2.css";
 
 @import "padding.css";
 @import "margin.css";
 @import "typography.css";
 @import "border-radius.css";
 @import "gaps.css";
+@import "colors.css";
 
 @import "custom.css";
 
