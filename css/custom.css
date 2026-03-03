@@ -1,4 +1,4 @@
-#menu {
+/*#menu {
     background-color: transparent;
     inset: auto;
     top: 3rem;
@@ -28,7 +28,7 @@
     display: none;
 }
 
-/* Wenn Popover offen ist → Text wechseln */
+
 #menu:popover-open+.menu-toggle .label-open {
     display: none;
 }
@@ -73,24 +73,74 @@
 }
 
 
+*/
 
 
 
 
-#hero-container {
-    background-image:
-        linear-gradient(to top,
-            rgba(0, 0, 0, 25.9) 0%,
-            rgba(0, 0, 0, 0) 41.9%),
-        url("../src/img/gradient.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    color: var(--color-text-white);
 
-    h1,
-    p {
-        color: var(--color-text-white);
+
+.custom-img {
+    width: 100%;
+    height: 100%;
+
+    border-radius: var(--size-m);
+
+    @media (min-width:782px) {
+        width: 100%;
+        height: 100%;
     }
 }
 
+.custom-grid-cols-2 {
+    grid-template-columns: 1fr 1fr;
+}
+
+.custom-ul {
+    li::before {
+        content: "music_note_2";
+        color: var(--color-accent);
+        font-family: "Material Symbols Outlined";
+        font-size: 20px;
+        line-height: 1;
+        font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 24;
+        margin-right: var(--size-m);
+        position: relative;
+        top: var(--size-2xs);
+
+    }
+}
+
+.custom-image-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--size-m);
+    grid-auto-rows: 180px;
+    grid-auto-flow: dense;
+
+    @media (min-width:785px) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+
+    .custom-image-grid-item {
+        grid-column: span 1;
+
+        @media (min-width:785px) {
+            grid-column: span 2;
+        }
+    }
+}
+
+
+.custom-grid-cols-4-2-1 {
+    grid-template-columns: 1fr;
+
+    @media (min-width:785px) {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    @media (min-width:1280px) {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}

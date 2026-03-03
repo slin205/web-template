@@ -17,3 +17,7 @@
 .bg-white{
     background-color: var(--color-overwrite-white);
 }
+
+.bg-grey{
+    background-color: var(--color-surface);
+}

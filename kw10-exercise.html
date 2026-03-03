@@ -2,23 +2,23 @@
 <html lang="de">
 
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Test Build IHK</title>
+    <title>Menü</title>
     <link rel="icon" href="favicon.png">
+
     <link rel="preload" href="fonts/Geist/geist.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/main.v2.css">
 
-    <script src="script/dark-mode.js" defer></script>
-    <script src="script/slider.js" defer></script>
     <script src="script/notification-banner.js" defer></script>
-    <script src="script/cookie-rest.js" defer></script>
-    <script src="script/dropdown-menu.js" defer></script>
     <script src="script/mobile-menu.js" defer></script>
+    <script src="script/cookie-rest.js" defer></script>
+    <script src="script/dark-mode.js" defer></script>
 
     <meta name="description" content="Beschreibung.">
     <meta name="author" content="Sebastian Lindstaedt">
+
 </head>
 
 <body>
@@ -30,7 +30,7 @@
                     without a break.</span>
             </div>
             <span class="notification-banner-cta-close">
-                <a class="subheading cta-notification color-black flex gap-xs" href="#">
+                <a class="subheading cta-link color-black flex gap-xs" href="#">
                     <span class="color-black">Mehr Erfahren</span>
                     <span class="material-symbols-outlined color-black">arrow_forward</span>
                 </a>
@@ -119,8 +119,9 @@
                     </div>
                     <div class="globalnav-actions">
                         <div class="globalnav-cta">
-                            <a class="cta-btn" href="#">Anmelden</a>
-                            <a class="git-btn" href="https://github.com/slin205/web-template">Zum Git-Repository</a>
+                            <a class="cta-btn-primary" href="#">Anmelden</a>
+                            <a class="cta-btn-secondary"
+                                href="https://github.com/slin205/web-template">Git-Repository</a>
                         </div>
                         <div class="globalnav-mobile">
                             <button class="mobile-trigger" aria-label="Menü" aria-expanded="false"
@@ -139,83 +140,137 @@
                         <a href="#">Support</a>
                     </div>
                     <div class="globalnav-mobile-menu-actions">
-                        <a class="cta-mobile-primary" href="#">Anmelden</a>
-                        <a class="cta-mobile-secondary" href="#">Zum Git-Repository</a>
+                        <a class="cta-btn-primary w-full" href="#">Anmelden</a>
+                        <a class="cta-btn-secondary w-full" href="#">Git-Repository</a>
                     </div>
                 </div>
             </div>
         </div>
     </header>
     <main>
-        <section class="w-full" id="hero-container">
-            <div class="flex flex-column p-l max-w-content m-auto h-hero justify-end">
-                <div class="max-w-div">
-                    <div class="review flex items-center gap-m mb-s">
-                        <div class="flex">
-                            <img src="src/img/review/person1.jpg" alt="person">
-                            <img src="src/img/review/person2.jpg" alt="person">
-                            <img src="src/img/review/person3.jpg" alt="person">
-                        </div>
-                        <div class="flex flex-column">
-                            <div class="title3 stars" aria-label="5 von 5 Sternen">
-                                <span class="material-symbols-filled">star_rate</span>
-                                <span class="material-symbols-filled">star_rate</span>
-                                <span class="material-symbols-filled">star_rate</span>
-                                <span class="material-symbols-filled">star_rate</span>
-                                <span class="material-symbols-filled">star_rate</span>
+        <section class="wrapper py-2xl" id="hero-container">
+            <div class="grid grid-cols-2 max-w-content m-auto">
+                <div class="flex flex-column p-l justify-center">
+                    <div class="max-w-div">
+                        <div class="review flex items-center gap-m mb-s">
+                            <div class="flex">
+                                <img src="src/img/review/person1.jpg" alt="person">
+                                <img src="src/img/review/person2.jpg" alt="person">
+                                <img src="src/img/review/person3.jpg" alt="person">
                             </div>
-                            <p class="text-white body weight-300 ">4.89 from 2 clients</p>
+                            <div class="flex flex-column">
+                                <div class="title3 stars" aria-label="5 von 5 Sternen">
+                                    <span class="material-symbols-filled">star_rate</span>
+                                    <span class="material-symbols-filled">star_rate</span>
+                                    <span class="material-symbols-filled">star_rate</span>
+                                    <span class="material-symbols-filled">star_rate</span>
+                                    <span class="material-symbols-filled">star_rate</span>
+                                </div>
+                                <p class="text-white body weight-300 ">4.89 from 2 clients</p>
+                            </div>
                         </div>
-                    </div>
 
-                    <h1 class="display1 text-white">Sixty zippers</h1>
-                    <p class="title2 mb-s text-white">Were quickly picked from the woven jute bag.</p>
-                    <p class="mb-l text-white">Everyone has the right to an effective remedy by the competent national
-                        tribunals for acts violating the fundamental rights granted him by the constitution or by law.
-                    </p>
-                    <a class="cta-btn text-black mb-xl" href="kontakt.html">
-                        <p>Anmelden</p>
-                        <div class="material-symbols-outlined">arrow_forward</div>
-                    </a>
+                        <h1 class="display1 text-white">Sixty zippers</h1>
+                        <p class="title2 mb-s text-white">Were quickly picked from the woven jute bag.</p>
+                        <p class="mb-l text-white">Everyone has the right to an effective remedy by the competent
+                            national
+                            tribunals for acts violating the fundamental rights granted him by the constitution or by
+                            law.
+                        </p>
+                        <a class="cta-btn-primary text-black" href="kontakt.html">
+                            <p>Anmelden</p>
+                            <div class="material-symbols-outlined">arrow_forward</div>
+                        </a>
+                    </div>
+                </div>
+                <div class="grid custom-grid-cols-2 gap-m p-l">
+                    <img class="custom-img aspect-1x1" src="src/bird.jpg" alt="bild">
+                    <img class="custom-img aspect-1x1" src="src/flower.jpg" alt="bild">
+                    <img class="custom-img aspect-1x1" src="src/penguin.jpg" alt="bild">
+                    <img class="custom-img aspect-1x1" src="src/rocks.jpg" alt="bild">
                 </div>
             </div>
         </section>
-        <section>
-            <div class="mt-xl">
-                <div class="slider">
-                    <div class="slider-track flex gap-l">
-                        <div class="slider-item max-w-1426 h-content rounded-l flex flex-column items-start justify-end p-l"
-                            style="background-image: url(src/bird.jpg)" ;>
-                            <p class="title1 text-white">Whereas recognition</p>
-                            <a class="cta-link" href="#">Mehr Erfahren</a>
-                        </div>
-                        <div class="slider-item max-w-1426 h-content rounded-l flex flex-column items-start justify-end p-l"
-                            style="background-image: url(src/flower.jpg)" ;>
-                            <p class="title1 text-white">Contempt for human</p>
-                            <a class="cta-link" href="#">Mehr Erfahren</a>
-                        </div>
-                        <div class="slider-item max-w-1426 h-content rounded-l flex flex-column items-start justify-end p-l"
-                            style="background-image: url(src/img/elephant.jpg)" ;>
-                            <p class="title1 text-white">Prohibited in all their forms</p>
-                            <a class="cta-link" href="#">Mehr Erfahren</a>
-                        </div>
-                    </div>
-                    <div class="slider-dots"></div>
-                </div>
+        <section class="wrapper grid grid-cols-2 max-w-content m-auto py-2xl">
+            <div class="gap-m p-l">
+                <h2 class="display2 mb-xl">Lorem ipsum dolor sit amet</h2>
+                <ul class="custom-ul flex flex-column gap-l">
+                    <li>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+                        ut
+                        labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
+                        dolores
+                        et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est</li>
+                    <li>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                        nonumy
+                        eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</li>
+                    <li>At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
+                        takimata
+                        sanctus est Lorem ipsum dolor sit amet.</li>
+                    <li>Sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+                        voluptua.
+                        At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
+                        takimata
+                        sanctus est.</li>
+                    <li>consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                        aliquyam erat, sed diam voluptua.</li>
+                </ul>
+            </div>
+            <div class="custom-image-grid gap-m p-l my-auto">
+                <img class="custom-img aspect-1x1" src="src/img/abstract.jpg" alt="bild">
+                <img class="custom-img aspect-1x1" src="src/img/earth.jpg" alt="bild">
+                <img class="custom-img aspect-1x1" src="src/img/elephant.jpg" alt="bild">
+                <img class="custom-img custom-image-grid-item aspect-1x1" src="src/img/gradient.jpg" alt="bild">
+                <img class="custom-img aspect-1x1" src="src/img/gradient2.jpg" alt="bild">
+                <img class="custom-img aspect-1x1" src="src/img/space.jpg" alt="bild">
+                <img class="custom-img aspect-1x1" src="src/img/tennis-ball.jpg" alt="bild">
+                <img class="custom-img aspect-1x1" src="src/rocks.jpg" alt="bild">
             </div>
         </section>
-        <section class="wrapper mt-2xl card h-content p-l grid gap-l mb-xl">
-
-            <h1 class="display1">Sixty zippers were quickly picked from the woven jute bag</h1>
-            <h2 class="display2">Sixty zippers were quickly picked from the woven jute bag</h2>
-            <h3 class="title1">Sixty zippers were quickly picked from the woven jute bag</h3>
-            <h4 class="title2">Sixty zippers were quickly picked from the woven jute bag</h4>
-            <p>Unlock the full potential of your business. Start your journey today and experience the future of
-                business software.</p>
-            <a class="cta-btn text-black" href="#">
-                <p class="text-black">Anmelden</p>
-                <div class="material-symbols-outlined">arrow_forward</div>
-            </a>
+        <section class="bg-grey">
+            <div class="wrapper py-2xl">
+                <h2 class="display2 mb-xl">At vero eos et accusam</h2>
+                <div class="grid custom-grid-cols-4-2-1 gap-l">
+                    <div class="custom-text-block">
+                        <h4 class="title3 mb-m">Lorem ipsum dolor.</h4>
+                        <p class="mb-s">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                            tempor
+                            invidunt ut labore et dolore magna aliquyam erat</p>
+                        <div class="flex gap-s">
+                            <a class="cta-btn-primary" href="#">HTML</a>
+                            <a class="cta-btn-primary" href="#">CSS</a>
+                        </div>
+                    </div>
+                    <div class="custom-text-block">
+                        <h4 class="title3 mb-m">Lorem ipsum dolor.</h4>
+                        <p class="mb-s">Lorem ipsum dolor sit amet sed diam nonumy eirmod
+                            tempor invidunt ut labore et dolore magna aliquyam erat</p>
+                        <div class="flex gap-s">
+                            <a class="cta-btn-primary" href="#">HTML</a>
+                            <a class="cta-btn-primary" href="#">CSS</a>
+                        </div>
+                    </div>
+                    <div class="custom-text-block">
+                        <h4 class="title3 mb-m">Lorem ipsum dolor.</h4>
+                        <p class="mb-s">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                            tempor
+                            invidunt ut labore et dolore magna aliquyam erat</p>
+                        <div class="flex gap-s">
+                            <a class="cta-btn-primary" href="#">HTML</a>
+                            <a class="cta-btn-primary" href="#">CSS</a>
+                        </div>
+                    </div>
+                    <div class="custom-text-block">
+                        <h4 class="title3 mb-m">Lorem ipsum dolor.</h4>
+                        <p class="mb-s">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                            tempor
+                            invidunt ut labore et dolore magna aliquyam erat</p>
+                        <div class="flex gap-s">
+                            <a class="cta-btn-primary" href="#">HTML</a>
+                            <a class="cta-btn-primary" href="#">CSS</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
     <footer>

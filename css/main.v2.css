@@ -1,6 +1,6 @@
 @import "base.v2.css";
-@import "components.css";
 @import "components.v2.css";
+@import "custom.css";
 
 @import "padding.css";
 @import "margin.css";
@@ -9,7 +9,7 @@
 @import "gaps.css";
 @import "colors.css";
 
-@import "custom.css";
+
 
 :root {
     color-scheme: light dark;
@@ -25,12 +25,9 @@
     --color-accent: #BDED3D;
     --color-accent-light: #ebfcbd;
     --color-error: #d92323;
-    /*--color-icons: #fff;*/
 
     --font-global: "Geist", system-ui, sans-serif;
     --font-icons: "Material Symbols Outlined", sans-serif;
-
-    interpolate-size: allow-keywords;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -130,7 +127,6 @@ label {
     font-size: inherit;
 }
 
-
 input {
     background: var(--color-background-light);
     color: var(--color-font-dark);
@@ -139,10 +135,7 @@ input {
     padding: 8px 85px 8px 12px;
 }
 
-
-
 footer {
-
     p,
     a,
     li {
@@ -155,11 +148,6 @@ footer {
         color: var(--color-text);
     }
 }
-
-svg.icon path {
-    fill: var(--color-text-grey);
-}
-
 
 input,
 textarea {
