@@ -251,3 +251,7 @@ form {
     background-position: right var(--size-l) center;
     background-size: var(--size-l);
 }
+
+summary {
+  list-style: none;
+}

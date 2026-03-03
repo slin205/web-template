@@ -374,6 +374,34 @@ body:has(.globalnav.menu-open) {
     width: 1px;
 }
 
+.review {
+    width: fit-content;
+    /*border: 1px solid var(--color-border);
+    background-color: black;
+    padding: var(--size-xs) var(--size-m);
+    border-radius: var(--size-m);*/
+
+    img {
+        width: var(--size-xl);
+        height: var(--size-xl);
+        border-radius: 50%;
+
+        &:not(:first-child) {
+            margin-left: calc(var(--size-xs) * -1);
+        }
+    }
+
+    .stars {
+        display: flex;
+
+        color: var(--color-accent);
+    }
+
+    p {
+        margin-top: calc(var(--size-2xs) * -1);
+    }
+}
+
 .slider {
     overflow: hidden;
 
